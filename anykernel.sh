@@ -10,11 +10,7 @@ do.modules=1
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=RMP6768
-device.name2=RMX3031
-device.name3=RMX3630
-device.name4=light
-device.name5=
+device.name1=apollow
 supported.versions=
 supported.patchlevels=
 '; } # end properties
