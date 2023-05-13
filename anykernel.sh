@@ -11,6 +11,7 @@ do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=apollow
+device.name2=G
 supported.versions=
 supported.patchlevels=
 '; } # end properties
