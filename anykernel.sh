@@ -2,7 +2,7 @@
 ## osm0sis @ xda-developers
 
 ### AnyKernel setup
-# begin properties
+# global properties
 properties() { '
 kernel.string=Straton kernel by shygos
 do.devicecheck=0
@@ -19,22 +19,22 @@ supported.versions=
 supported.patchlevels=
 '; } # end properties
 
+
 ### AnyKernel install
-# begin attributes
+## boot files attributes
 attributes() {
 set_perm_recursive 0 0 755 644 $ramdisk/*;
 set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 } # end attributes
 
-
-## boot shell variables
+# boot shell variables
 block=/dev/block/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
-. tools/ak3-core.sh && attributes;
+. tools/ak3-core.sh;
 
 # boot install
 split_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
@@ -60,7 +60,13 @@ flash_dtbo;
 ## end boot install
 
 
-## init_boot shell variables
+## init_boot files attributes
+#init_boot_attributes() {
+#set_perm_recursive 0 0 755 644 $ramdisk/*;
+#set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
+#} # end attributes
+
+# init_boot shell variables
 #block=init_boot;
 #is_slot_device=1;
 #ramdisk_compression=auto;
@@ -92,7 +98,13 @@ flash_dtbo;
 ## end vendor_kernel_boot install
 
 
-## vendor_boot shell variables
+## vendor_boot files attributes
+#vendor_boot_attributes() {
+#set_perm_recursive 0 0 755 644 $ramdisk/*;
+#set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
+#} # end attributes
+
+# vendor_boot shell variables
 #block=vendor_boot;
 #is_slot_device=1;
 #ramdisk_compression=auto;
