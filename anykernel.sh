@@ -5,16 +5,18 @@
 # global properties
 properties() { '
 kernel.string=Straton kernel by shygos
-do.devicecheck=0
+do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-device.name4=tuna
-device.name5=
+device.name1=RMX1911
+device.name2=RMX1919
+device.name3=RMX1925
+device.name4=RMX1927
+device.name5=RMX2030
+device.name6=r5x
+device.name7=realme_trinket
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
