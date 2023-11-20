@@ -14,6 +14,7 @@ device.name1=apollow
 device.name2=G
 device.name3=RMX2151
 device.name4=RM6785
+device.name5=salaa
 supported.versions=
 supported.patchlevels=
 '; } # end properties
