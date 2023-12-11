@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Straton kernel by shygos
+kernel.string=Gimang kernel by shygosh
 do.devicecheck=1
 do.modules=0
 do.systemless=1
