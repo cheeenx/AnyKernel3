@@ -15,6 +15,7 @@ device.name2=G
 device.name3=RMX2001L1
 device.name4=RM6785
 device.name5=salaa
+device.name6=r5x
 supported.versions=
 supported.patchlevels=
 '; } # end properties
