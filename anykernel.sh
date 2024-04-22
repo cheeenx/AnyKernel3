@@ -5,18 +5,25 @@
 # begin properties
 properties() { '
 kernel.string=Kernel
-do.devicecheck=0
+do.devicecheck=1
 do.modules=1
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=apollow
-device.name2=G
-device.name3=RMX2001L1
-device.name4=RM6785
-device.name5=salaa
-device.name6=r5x
-device.name7=RMX1801
+device.name1=RMX2005L1
+device.name2=RMX2151
+device.name3=RMX2151L1
+device.name4=RMX2153
+device.name5=RMX2153L1
+device.name6=RMX2155
+device.name7=RMX2155L1
+device.name8=RMX2156
+device.name9=RMX2156L1
+device.name10=RMX2161
+device.name11=RMX2161L1
+device.name12=RMX2163
+device.name13=RMX2163L1
+device.name14=salaa
 supported.versions=
 supported.patchlevels=
 '; } # end properties
